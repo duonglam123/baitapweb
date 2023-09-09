@@ -1,0 +1,62 @@
+.fashion-header{
+    background-color: rgb(4, 155, 4);
+    padding: 10px;
+    color: white;
+}
+.fashion-products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    box-sizing: border-box;
+}
+.fashion-item{
+    box-sizing: border-box;
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 240, 233);
+}
+.item1, .item2, .item3{
+    margin:0 10px;
+}
+.fashion-item img{
+    width: 100%;
+}
+@media screen and (max-width:415px)  {
+    .fashion-products{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .fashion-header{
+        text-align: center;
+    }
+    .fashion-item{
+        border: 1px solid green;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px)  {
+    .fashion-products{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fashion-header{
+        text-align: center;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .fashion-products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* flex-wrap: wrap; */
+        /* background-color: red; */
+    }
+    .fashion-item{
+        border: 1px solid green;
+        /* width: 100%; */
+    }
+
+}

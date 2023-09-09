@@ -1,0 +1,81 @@
+.container{
+    border: 1px solid rgb(14, 232, 14);
+    margin-left: 30%;
+    width: 600px;
+    
+}
+.login{
+    margin: 30px;
+    /* justify-items: center; */
+}
+.account{
+    font-size: 30px;
+    color: green;
+}
+input{
+    background-color: rgb(224, 219, 219) ;
+}
+.form-group{
+    margin: 20px 0px;
+    border: 1px solid rgb(165, 159, 159);
+    background-color: rgb(224, 219, 219);
+}
+i{
+    padding:15px;
+}
+.form-group input{
+    border: 0px;
+    /* background-color: rgb(224, 219, 219) ; */
+    border-left: 1px solid gray;
+    outline: none;
+}
+.date-gender label{
+    color: green;
+    font-size: 30px;
+}
+.date-birth input{
+    padding: 15px;
+    width: 50px;
+    margin: 20px 0px;
+}
+.date-gender{ /*hiển thị phần Date và gender trên cùng một dòng*/
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+}
+.content-gender{ /*cho phần tử của gender hiển thị vừa bằng 1 nửa phần còn lại*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.content-gender button{
+    padding: 15px;
+    margin: 20px 0px;
+}
+
+.payment{
+    color: green;
+    font-size: 30px;
+}
+/* .date-gender{
+    display: flex;
+} */
+.pay{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.pay button{
+    margin-top: 20px;
+}
+
+.card-CVC{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 4px
+}
+.card-CVC button{
+    width: 100%;
+}
+.card-CVC .select-date{
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}

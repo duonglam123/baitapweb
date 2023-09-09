@@ -1,0 +1,64 @@
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    width: 500px;
+    height: 500px;
+    border: 1px solid gray;
+    margin-left:30% ;
+}
+.sign-up input{
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: large;
+}
+.sign-up h1{
+  text-align: center;
+}
+.sign-up .sign-me-up {
+    padding: 15px;
+    position: relative;
+    left:70px;
+    top: 30px;
+    background-color: rgb(46, 242, 46);
+}
+.sign-up .sign-me-up:hover {
+    background-color: red;
+}
+.form-or{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(228, 197, 25);
+    border-radius: 50%;
+    background-color: rgb(211, 199, 199);
+    left:225px;
+    bottom: 200px;
+}
+.sign-in{
+   background-image: url(bgr.jpg);
+   background-size: cover; /*cho hình ảnh kéo dãn hoặc thu nhỏ để vừa khung hình mà k bị méo mó*/
+   background-repeat: no-repeat;
+   padding: 15px;
+   /* display: grid; */
+}
+.sign-in button{
+    width: 80%;
+    padding: 15px;
+    margin: 15px;
+}
+.social-signin-facebook{
+    background-color: rgb(220, 149, 222);
+}
+.social-signin-twitter{
+    background-color: rgb(36, 189, 156);
+}
+.social-signin-google{
+    background-color: rgb(171, 231, 21);
+}
