@@ -1,0 +1,27 @@
+.container{
+border: 1px solid pink;
+width: 500px;
+height: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: antiquewhite;
+}
+h1{
+display: flex;
+justify-content: center;
+align-items: center;
+color: aqua;
+}
+.input{
+margin: 50px;
+/* padding: 20px; */
+}
+input{
+padding: 10px;
+}
+.input button{
+    padding: 10px;
+    margin-right: 90px;
+}
+
