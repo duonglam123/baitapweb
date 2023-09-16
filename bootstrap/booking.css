@@ -1,0 +1,30 @@
+.container{
+    margin: 20px;
+}
+.btn{
+    padding: 0 50px;
+}
+.title{
+    margin: 20px;
+}
+.button{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+input{
+    border: none;
+}
+.content span{
+    margin: 20px;
+}
+.form{
+    margin: 30px;
+}
+.category a {
+    margin-right: 30px;
+}
+.row1-right{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}

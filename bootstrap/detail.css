@@ -1,0 +1,13 @@
+.container-fluid{
+    margin-top: 20px;
+}
+.navbar{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.img-item img{
+    width: 100%;
+}
+.img-top{
+    margin-bottom: 12px;
+}
