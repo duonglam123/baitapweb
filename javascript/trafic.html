@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin-left: 30%;
+    }
+    .button{
+        margin: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="button">
+        <button onclick="function_green()" class="traficlight">Green</button>
+        <button onclick="function_yellow()" class="traficlight">yellow</button>
+        <button onclick="function_red()" class="traficlight">red</button>
+        </div>
+        <img id="img-trafic" src="image/green.png" alt="traficlight">
+    </div>
+    <script>
+        function function_green(){
+            document.getElementById("img-trafic").src="image/green.png";
+        }
+        function function_yellow(){
+            document.getElementById("img-trafic").src="image/yellow.png";
+        }
+        function function_red(){
+            document.getElementById("img-trafic").src="image/red.png";
+        }
+
+    </script>
+</body>
+</html>
