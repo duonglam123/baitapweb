@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            border: 1px solid green;
+            background-color: rgb(233, 222, 222);
+        }
+        .form , .tb{
+            margin: 20px;
+            border: 1px solid green;
+        }
+        h1{
+            text-align: center;
+            color: pink;
+        }
+        .detail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input{
+            margin: 20px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button button{
+            margin: 20px;
+        }
+        table, td, th {
+        border: 1px solid;
+        }
+        table{
+            margin: 50px;
+            margin-left: 70px;
+            width: 80%;
+            border-collapse: collapse;
+        }
+    </style>
+    <div class="container">
+        <div class="form">
+            <div><h1    >New Product</h1></div>
+            <div class="detail">
+                <div>
+                    <div class="input">
+                        <label for="">Product Name</label>
+                        <input type="text" name="" id="pname" onclick="myFunction()">
+                    </div>
+                    <div class="input">
+                        <label for="">Quantity</label>
+                        <input type="number" name="" id="quantity">
+                    </div>
+                </div>
+                <div>
+                    <div class="input">
+                        <label for="">Unit Price</label>
+                        <input type="number" name="" id="price">
+                    </div>
+                    <div class="input">
+                        <label for="">Discount</label>
+                        <input type="number" name="" id="discount">
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button onclick="myFunction()">Sell</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+        <table id="table">
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Discount</th>
+                <th>Subtotal</th>
+            </tr>
+        </table>
+        <Script>
+            var id= 0;
+            function myFunction(){
+                id++;
+                var pname =document.getElementById("pname").value;
+                var quantity =document.getElementById("quantity").value;
+                var price =document.getElementById("price").value;
+                var discount =document.getElementById("discount").value;
+                var subtotal =quantity*price*(1-discount/100)
+                var row ="<tr>";
+                row += "<td>" + id + "</td>";
+                row += "<td>" + pname + "</td>";
+                row += "<td>$" + quantity + "</td>";
+                row += "<td>" + price + "</td>";
+                row += "<td>" + discount + "</td>";
+                row += "<td>$" + subtotal + "</td>";
+                row +="</tr>"
+                document.getElementById("table").innerHTML +=row;
+                
+                }
+        </Script>
+    </div>
+</body>
+</html>
