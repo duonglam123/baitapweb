@@ -15,7 +15,13 @@
             text-align: center;
         }
         table, td, th {
-        border: 1px solid;
+            border: 1px solid;
+        }
+        th{
+            background-color: yellow;
+        }
+        td{
+            background-color: rgb(62, 138, 62);
         }
         table{
             margin: 50px;
@@ -26,16 +32,22 @@
         .input{
             margin: 50px;
         }
-        .input input,button{
+        .input input, button{
             padding: 15px;
             margin: 15px;
             width: 50%;
         }
+
         .input div{
             display: grid;
             grid-template-columns: 30% 70%;
             justify-self: end;
             align-items: center;
+        }
+        #add{
+            width: 20%;
+            background-color: aqua;
+            border-radius: 5px;
         }
     </style>
     <div class="container">
@@ -53,7 +65,7 @@
                 <label for="">Product Price</label>
                 <input type="number" name="" id="price"><br>     
             </div>
-            <button onclick="myFunction()">Add</button>
+            <button id="add" onclick="myFunction()">Add</button>
             
         </div>
         <table id="table">
